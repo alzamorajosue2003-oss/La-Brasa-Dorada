@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Brasa Dorada — Querecotillo</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #121212;
+            color: #fff;
+            line-height: 1.8;
+        }
+        header {
+            background: linear-gradient(135deg, #000, #b36b00);
+            text-align: center;
+            padding: 25px 20px;
+        }
+        h1 {
+            font-size: 2.5rem;
+            color: #ffd700;
+            text-shadow: 3px 3px 6px rgba(0,0,0,0.7);
+            letter-spacing: 3px;
+        }
+        .subtitulo {
+            color: #ffeb99;
+            font-size: 1rem;
+            margin-top: 5px;
+        }
+
+        /* === VIDEO MÁS COMPACTO === */
+        .video-contenedor {
+            max-width: 450px;
+            margin: 20px auto;
+            padding: 0 20px;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0 0 12px rgba(255, 180, 0, 0.4);
+        }
+
+        /* === FOTOS 350 x 350 === */
+        .fotos-titulo {
+            text-align: center;
+            color: #ffd700;
+            margin: 35px 0 15px;
+            font-size: 1.4rem;
+        }
+        .fotos-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 350px));
+            justify-content: center;
+            gap: 15px;
+            max-width: 100%;
+            padding: 0 20px;
+        }
+        .fotos-grid img {
+            width: 350px;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(255, 180, 0, 0.3);
+        }
+
+        .promocion {
+            background: linear-gradient(90deg, #ff6a00, #ffb300);
+            color: #000;
+            text-align: center;
+            padding: 20px;
+            margin: 25px auto;
+            max-width: 400px;
+            border-radius: 50%;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+        section {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 25px;
+        }
+        h2 {
+            color: #ffd700;
+            margin: 30px 0 15px;
+            border-bottom: 2px solid #ffb300;
+            padding-bottom: 6px;
+            font-size: 1.4rem;
+        }
+        .item {
+            display: flex;
+            justify-content: space-between;
+            padding: 8px 0;
+            border-bottom: 1px dashed #333;
+        }
+        .precio {
+            color: #ffd700;
+            font-weight: bold;
+        }
+        .telefono {
+            text-align: center;
+            font-size: 1.5rem;
+            color: #ffd700;
+            margin: 30px 0;
+        }
+        footer {
+            background-color: #000;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            color: #ffd700;
+            border-top: 2px solid #b36b00;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🔥 LA BRASA DORADA 🍗</h1>
+        <p class="subtitulo">RESTAURANTE • HELADERÍA</p>
+        <p>Querecotillo — Sullana</p>
+    </header>
+
+    <!-- === VIDEO (MÁS PEQUEÑO) === -->
+    <div class="video-contenedor">
+        <video controls autoplay muted>
+            <source src="video.brasa.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <!-- === PROMOCIÓN === -->
+    <div class="promocion">
+        🌟 PROMOCIÓN 🌟<br>
+        1 Pollo + Gaseosa de 1.5 L<br>
+        (Concordia, Pepsi o 7 Up)<br>
+        <span style="font-size: 1.6rem;">S/ 65.00</span>
+    </div>
+
+    <h2 class="fotos-titulo">📸 clientes satisfechos</h2>
+    <div class="fotos-grid">
+        <img src="foto1.jpeg" alt="img1">
+        <img src="foto2.jpeg" alt="img2">
+        <img src="foto3.jpeg" alt="img3">
+        <img src="foto4.jpeg" alt="img4">
+        <img src="foto5.jpeg" alt="img5">
+        <img src="foto6.jpeg" alt="img6">
+        <img src="foto7.jpeg" alt="img7">
+        <img src="foto8.jpeg" alt="img8">
+    </div>
+
+    <!-- === MENÚ === -->
+    <section>
+        <h2>🍗 POLLO A LA BRASA</h2>
+        <div class="item"><span>1 Pollo completo</span><span class="precio">S/ 60.00</span></div>
+        <div class="item"><span>1/2 Pollo</span><span class="precio">S/ 34.00</span></div>
+        <div class="item"><span>1/4 Pollo</span><span class="precio">S/ 20.00</span></div>
+        <div class="item"><span>1/8 Pollo</span><span class="precio">S/ 12.00</span></div>
+
+        <h2>🥤 BEBIDAS</h2>
+        <div class="item"><span>Gordita</span><span class="precio">S/ 7.00</span></div>
+        <div class="item"><span>Inca / Coca Personal</span><span class="precio">S/ 4.00</span></div>
+        <div class="item"><span>Inca Kola 1 L (Vidrio)</span><span class="precio">S/ 10.00</span></div>
+        <div class="item"><span>Inca / Coca 1.5 L</span><span class="precio">S/ 14.00</span></div>
+        <div class="item"><span>Pepsi 1 L</span><span class="precio">S/ 7.00</span></div>
+        <div class="item"><span>Concordia, 7 Up o Pepsi 1.5 L</span><span class="precio">S/ 10.00</span></div>
+        <div class="item"><span>Chicha Morada 1 L</span><span class="precio">S/ 12.00</span></div>
+        <div class="item"><span>Chicha Morada 1/2 Lt</span><span class="precio">S/ 6.00</span></div>
+        <div class="item"><span>Concordia</span><span class="precio">S/ 1.50</span></div>
+        <div class="item"><span>Agua mineral</span><span class="precio">S/ 2.00</span></div>
+
+        <div class="telefono">📞 936 870 727</div>
+    </section>
+
+    <footer>
+        <p>© 2026 La Brasa Dorada — Querecotillo</p>
+        <p>¡El mejor sabor a la brasa lo encuntras aqui en querecotillo!</p>
+        <p>tcnico .alzamora2026</p>
+    </footer>
+
+</body>
+</html>
